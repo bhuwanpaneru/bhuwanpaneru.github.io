@@ -16,18 +16,6 @@
     <link rel="stylesheet" href="assets/fonts/remixicon.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Bhuwan Paneru</title>
-    <script>
-        var joiningDate= new Date("10/01/2019");
-        var currentDate = new Date();   
-        var allYears= currentDate.getFullYear() - joiningDate.getFullYear();
-        var partialMonths = currentDate.getMonth() - joiningDate.getMonth();
-        if (partialMonths < 0) {
-            allYears--;
-            partialMonths = partialMonths + 12;
-        }
-        var total = allYears + "." + partialMonths;
-        document.getElementById("exp").innerHTML = total;
-    </script>
 </head>
 
 <body>
@@ -318,6 +306,18 @@
             </div>
         </article>
     </main>
+        <script>
+        var joiningDate= new Date("10/01/2019");
+        var currentDate = new Date();   
+        var allYears= currentDate.getFullYear() - joiningDate.getFullYear();
+        var partialMonths = currentDate.getMonth() - joiningDate.getMonth();
+        if (partialMonths < 0) {
+            allYears--;
+            partialMonths = partialMonths + 12;
+        }
+        var total = allYears + "." + partialMonths;
+        document.getElementById("exp").innerHTML = total;
+    </script>
 </body>
 
 </html>
