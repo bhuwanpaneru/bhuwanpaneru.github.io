@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="assets/fonts/remixicon.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Bhuwan Paneru</title>
+    <script src="https://api.countapi.xyz/hit/bhuwanpaneru.github.io/visits?callback=liveViews" async></script>
 </head>
 
 <body>
@@ -288,7 +289,8 @@
                                                 class="ri-riding-line"></i></span><span
                                             class="interests__description">Bike Riding</span></li>
                                 </ul>
-                            </div>
+                            </div> 
+                            <h6><span id="visits"></span>.</h6>
                         </div>
                         <div class="info">
                             <div class="info__head">
@@ -317,6 +319,9 @@
         }
         var total = allYears + "." + partialMonths;
         document.getElementById("exp").innerHTML = total;
+        function liveViews(response) {
+        document.getElementById('visits').innerText = response.value;
+}
     </script>
 </body>
 
