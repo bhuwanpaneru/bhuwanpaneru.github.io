@@ -17,22 +17,7 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Bhuwan Paneru</title>
     <script src="https://api.countapi.xyz/hit/bhuwanpaneru.github.io/visits?callback=liveViews" async></script>
-    <script>
-        var joiningDate= new Date("10/01/2019");
-        var currentDate = new Date();   
-        var allYears= currentDate.getFullYear() - joiningDate.getFullYear();
-        var partialMonths = currentDate.getMonth() - joiningDate.getMonth();
-        if (partialMonths < 0) {
-            allYears--;
-            partialMonths = partialMonths + 12;
-        }
-        var total = allYears + "." + partialMonths;
-        document.getElementById("exp").innerHTML = total;
-            alert(total);
-        //function liveViews(response) {
-        //document.getElementById('visits').innerText = response.value;
-//}
-    </script>
+    
 </head>
 
 <body>
@@ -324,7 +309,22 @@
             </div>
         </article>
     </main>
-        
+    <script>
+        var joiningDate= new Date("10/01/2019");
+        var currentDate = new Date();   
+        var allYears= currentDate.getFullYear() - joiningDate.getFullYear();
+        var partialMonths = currentDate.getMonth() - joiningDate.getMonth();
+        if (partialMonths < 0) {
+            allYears--;
+            partialMonths = partialMonths + 12;
+        }
+        var total = allYears + "." + partialMonths;
+        document.getElementById("exp").innerHTML = total;
+            alert(total);
+        //function liveViews(response) {
+        //document.getElementById('visits').innerText = response.value;
+        //}
+    </script>
 </body>
 
 </html>
